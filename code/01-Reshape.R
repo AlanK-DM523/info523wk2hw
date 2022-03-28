@@ -33,6 +33,8 @@ raw$day <- as.numeric(as.character(raw$day))
 raw <- raw[, c("year", "month", "day", "element", "value")]
 # ------------------------------------------
 
+# added annotations for homework
+
 head(raw)
 
 tidy <- dcast(raw, year + month + day ~ element, 
